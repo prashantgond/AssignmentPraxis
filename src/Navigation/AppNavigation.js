@@ -43,8 +43,9 @@ function AppNavigation() {
     else {
         return (
             <NavigationContainer >
-                <Stack.Navigator headerMode={'none'}
-                    screenOptions={{ gestureEnabled: false }}
+                <Stack.Navigator
+                    // headerMode={'none'}
+                    screenOptions={{ gestureEnabled: true }}
                 >
                     <Stack.Screen name="Login" component={LoginScreen} />
                     <Stack.Screen name="Home" component={HomeScreen} />
